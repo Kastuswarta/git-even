@@ -1,0 +1,63 @@
+using System;
+
+namespace Lessons
+{
+    class Raschet
+    {
+        static void Main(string[] args)
+        {
+            Raschet Raschet = new Raschet();
+            bool endApp = false;
+            while (!endApp)
+            {
+                Console.Clear();
+                string str;
+                double a, b, c;
+                Console.WriteLine("Простые действия с тремя числами");
+                Console.WriteLine("                                ");
+                Console.WriteLine("Введи первое число");
+                Console.WriteLine("                                             ");
+                str = Console.ReadLine();
+                a = (double)Convert.ToDouble(str);
+                Console.WriteLine("                                             ");
+                Console.WriteLine("Введи вторе число");
+                Console.WriteLine("                                             ");
+                str = Console.ReadLine();
+                b = (double)Convert.ToDouble(str);
+                double midar = (a + b) / 2;
+                double exmidar = (a*a + b*b) / 2;
+                double sqmidar = ((a + b) / 2) * ((a + b) / 2);
+                Console.WriteLine("                                              ");
+                Console.WriteLine("Среднее арифметическое двух чисел:           " + midar);
+                Console.WriteLine("                                              ");
+                Console.WriteLine("Среднее квадратическое двух чисел:           " + exmidar);
+                Console.WriteLine("                                              ");
+                Console.WriteLine("квадрат среднего арифметического 2 чисел:    " + sqmidar);
+                Console.WriteLine("                                              ");
+                Console.WriteLine("Введи третье число");
+                Console.WriteLine("                                              ");
+                str = Console.ReadLine();
+                c = (double)Convert.ToDouble(str);
+                double three = (a + b + c) / 3.0 ;
+                double exthree = (a*a + b*b + c*c) / 3.0;
+                Console.WriteLine("                                              ");
+                Console.WriteLine("Среднее арифметическое трёх чисел:      "+ three);
+                Console.WriteLine("                                              ");
+                Console.WriteLine("Среднее квадратическое трёх чисел:      "+ exthree);
+                Console.WriteLine("                                              ");
+                double multhree = a * b * c; 
+                Console.WriteLine("Произведение трёх чисел:                "+ multhree); 
+                Console.WriteLine("                                              ");
+                Console.WriteLine("                                              ");
+                double conthree = a + b + c;
+                Console.WriteLine("Сумма  трёх  чисел:                     "+ conthree);
+                Console.WriteLine("                                             " );
+                Console.WriteLine("                                             " );
+                Console.Write("Нажми N и ввод, чтобы закрыть приложение или нажми любую клавишу, чтобы продолжить:");
+                if (Console.ReadLine() == "n") endApp = true;
+                Console.WriteLine("\n");
+            }
+            return;
+        }
+    }
+}
