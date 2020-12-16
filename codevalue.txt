@@ -13,8 +13,8 @@ namespace Lessons
                 Console.Clear();
                 string str;
                 double a, b, c;
-                Console.WriteLine("Простые действия с тремя числами");
-                Console.WriteLine("                                ");
+                Console.WriteLine(" ");
+                Console.WriteLine(" Przosty  dzejanyki z licsbamy ");
                 Console.WriteLine("Введи первое число");
                 Console.WriteLine("                                             ");
                 str = Console.ReadLine();
