@@ -15,8 +15,8 @@ namespace Lessons
                 double a, b, c;
                 Console.WriteLine(" ");
                 Console.WriteLine(" Przosty  dzejanyki z licsbamy ");
-                Console.WriteLine("Введи первое число");
-                Console.WriteLine("                                             ");
+                Console.WriteLine(" zadaj odin numer ");
+                Console.WriteLine("                                          ");
                 str = Console.ReadLine();
                 a = (double)Convert.ToDouble(str);
                 Console.WriteLine("                                             ");
